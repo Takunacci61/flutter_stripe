@@ -223,3 +223,14 @@ This project uses [melos](https://github.com/invertase/melos) to manage all the 
 ##### Publishing
 
 - Use `melos version` and `melos publish` to keep all the repositories in sync
+
+## Note on Android Theme Configuration
+
+If you encounter issues with theming in your Android app, you may need to explicitly define a theme in your `AndroidManifest.xml` file. 
+
+### Steps:
+1. Open the `AndroidManifest.xml` file located in your `android/app/src/main/` directory.
+2. Add the following line inside the `<application>` tag:
+   ```xml
+   android:theme="@style/Theme.AppCompat.Light"
+
